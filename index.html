@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Travel Planner</title>
+    <style>
+        #map {
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .destination-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Travel Planner</h1>
+        <form id="destination-form" class="mb-4">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" id="destination" class="form-control" placeholder="Enter Destination" required>
+                </div>
+                <div class="col">
+                    <input type="datetime-local" id="datetime" class="form-control" required>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Add Destination</button>
+                </div>
+            </div>
+        </form>
+        
+        <div id="destination-list" class="mb-4"></div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
